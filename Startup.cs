@@ -27,7 +27,11 @@ namespace CricMazaAPISerDb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(
+               options => {
+                   options.JsonSerializerOptions.PropertyNamingPolicy = null;
+                   options.JsonSerializerOptions.DictionaryKeyPolicy = null;
+               });
             services.AddDbContext<CricMaza21Context>(options =>
                    options.UseSqlServer(Configuration.GetConnectionString("CricmazaDbContext")));
         
@@ -41,9 +45,14 @@ namespace CricMazaAPISerDb
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors(options =>
+            {
+                options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+            });
 
             app.UseAuthorization();
 

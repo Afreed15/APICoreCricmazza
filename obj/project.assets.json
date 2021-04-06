@@ -8479,11 +8479,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\mvc\\CricMazaAPISerDb\\CricMazaAPISerDb.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\mvccoreproject\\CricMazaCoreAPI\\CricMazaAPISerDb.csproj",
       "projectName": "CricMazaAPISerDb",
-      "projectPath": "E:\\mvc\\CricMazaAPISerDb\\CricMazaAPISerDb.csproj",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\mvccoreproject\\CricMazaCoreAPI\\CricMazaAPISerDb.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "E:\\mvc\\CricMazaAPISerDb\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\mvccoreproject\\CricMazaCoreAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
